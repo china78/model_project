@@ -1,5 +1,10 @@
 import './App.css';
-import Header from ''
+import Header from '@/components/header';
+import Banner from '@/components/banner';
+import Category from '@/components/category';
+import SpecialOffers from '@/components/special_offers';
+import TrendingProducts from '@/components/trending_products';
+import BrowseByCategory from '@/components/browse_by_category';
 
 function App() {
   return (
@@ -19,9 +24,10 @@ function App() {
         </div>
       </div>
       {/* 消息 */}
-      <News />
+      {/* <News /> */}
     </div>
   );
 }
 
 export default App;
+
