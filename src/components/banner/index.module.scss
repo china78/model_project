@@ -1,0 +1,24 @@
+.banner {
+  padding-top: 248px;
+  padding-bottom: 295px;
+  @include flex-start;
+  .content {
+    margin-right: 180px;
+    .title {
+      width: 725px;
+      font-size: 46px;
+      font-family: Impact;
+      margin-bottom: 28px;
+    }
+    .descript {
+      font-size: 22px;
+      color: #4e4e4e;
+    }
+  }
+  .mainImg {
+    max-width: 212px;
+    img {
+      width: 100%;
+    }
+  }
+}
