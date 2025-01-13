@@ -1,0 +1,36 @@
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header {
+  @include flex-between();
+  border-bottom: 1px solid #d6d5da;
+  padding-bottom: 40px;
+  .leftbox {
+    @include flex-start();
+    .logo {
+
+    }
+    .navName {
+      width: 116px;
+      font-size: 1rem;
+    }
+  }
+  .rightbox {
+    @include flex-end();
+    .icons {
+      margin-left: 26px;
+    }
+  }
+}
