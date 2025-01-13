@@ -2,9 +2,9 @@ import './App.css';
 import Header from '@/components/header';
 import Banner from '@/components/banner';
 import Category from '@/components/category';
-import SpecialOffers from '@/components/special_offers';
+import SpecialOffers from '@/components/specialOffers';
 import TrendingProducts from '@/components/trending_products';
-import BrowseByCategory from '@/components/browse_by_category';
+import BrowseByCategory from '@/components/browseByCategory';
 
 function App() {
   return (

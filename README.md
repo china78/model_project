@@ -11,3 +11,5 @@ webpack.config.js
     ]
   }
 })
+
+首页主图设置了 transform: scaleX(-1);

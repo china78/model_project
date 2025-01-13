@@ -1,0 +1,29 @@
+.iptbox {
+  position: relative;
+  .ipt {
+    width: 488px;
+    height: 66px;
+    border: 2px solid #e7e7e9;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 26px;
+    background-color: #fafafa;
+  }
+  .ipt::placeholder {
+    font-size: 20px;
+    color: #030303;
+  }
+  .ipt:focus {
+    cursor: text; // 光标大小
+    outline: none; // 边框不变色
+    border-color: #d2d2d2; // 指定颜色
+    caret-color: #030303; // 光标颜色
+  }
+  .icon {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 25px;
+    top: 22px;
+  }
+}
