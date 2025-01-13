@@ -20,7 +20,13 @@
   .leftbox {
     @include flex-start();
     .logo {
-
+      max-width: 32px;
+      max-height: 32px;
+      margin-right: 48px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
     .navName {
       width: 116px;
@@ -31,6 +37,12 @@
     @include flex-end();
     .icons {
       margin-left: 26px;
+      max-width: 25px;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }
