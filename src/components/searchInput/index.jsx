@@ -2,9 +2,12 @@ import { useState } from 'react';
 import styles from './index.module.scss';
 import CusInput from './comps/input.jsx';
 import searchIcon from '@/assets/icons/search.png';
-import CusButton from '../button/index.jsx';
+import { RedButton } from '../button/index.jsx';
 export default function SearchInput () {
   const [inputValue, setInputValue] = useState('');
+  const handleSearch = () => {
+    console.log(inputValue)
+  }
   return (
     <div className={styles.actions}>
       <CusInput
@@ -13,7 +16,7 @@ export default function SearchInput () {
         setInputValue={setInputValue}
         placeholder="what are you looking for?"
       />
-      <CusButton />
+      <RedButton handleSearch={handleSearch} />
     </div>
   )
 }
