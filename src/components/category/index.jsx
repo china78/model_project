@@ -6,6 +6,7 @@ import tu from '@/assets/img/tu.jpeg'
 import jin from '@/assets/img/js.jpeg'
 import shui from '@/assets/img/sj.jpeg'
 import d3 from '@/assets/img/d3.jpeg'
+import PictrueFrame from '@/components/pictrueFrame'
 export default function Category () {
   const [category, setCategory] = useState([
     { id: 1, name: '木雕', img: mu, wz: 0 },
@@ -24,12 +25,11 @@ export default function Category () {
       <div className={styles.content}>
         {
           category.map((cat) => (
-            <div key={cat.id} className={styles.category} onClick={() => handleClick(cat)}>
-              <div className={styles.name}>{cat.name}</div>
-              <div className={styles.imgbox}>
-                <img src={cat.img} alt="categoryIcon" style={{ marginTop: cat.wz }} />
-              </div>
-            </div>
+            <PictrueFrame
+              key={cat.id}
+              imgInfo={cat}
+              callback={handleClick}
+            />
           ))
         }
       </div>

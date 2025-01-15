@@ -1,0 +1,27 @@
+.pictrueFrame {
+  width: 188px;
+  height: 220px;
+  text-align: center;
+  background-color: #f8f8f8;
+  // padding: 44px 54px 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  .name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .imgbox {
+    width: 150px;
+    height: 110px;
+    overflow: hidden;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+}
+.pictrueFrame:hover {
+  background-color: #e9e9e9;
+}

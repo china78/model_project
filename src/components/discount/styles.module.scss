@@ -1,0 +1,44 @@
+.discount {
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 32px;
+  overflow: auto;
+  margin-bottom: 25px;
+  .name {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .descript {
+    font-size: 18px;
+    color: #464749;
+    margin-bottom: 44px;
+  }
+  .iconbox {
+    position: relative;
+    .imgbox {
+      max-width: 120px;
+      overflow: hidden;
+      border-radius: 10px;
+      margin: 0 auto;
+      margin-bottom: 44px;
+      img {
+        width: 100%;
+      }
+    }
+    .icon {
+      width: 80px;
+      height: 80px;
+      background-color: #ed2124;
+      border-radius: 50%;
+      text-align: center;
+      color: #fff;
+      font-size: 18px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}

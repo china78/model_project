@@ -4,7 +4,7 @@ export function RedButton({
   text="搜索",
   width="160px",
   height="66px",
-  handleSearch
+  handleClick
 }) {
   return (
     <button
@@ -13,7 +13,7 @@ export function RedButton({
         width,
         height
       }}
-      onClick={handleSearch}
+      onClick={handleClick}
     >
         {text}
       </button>
