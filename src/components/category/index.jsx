@@ -15,13 +15,16 @@ export default function Category () {
     { id: 5, name: '水晶', img: shui, wz: -59 },
     { id: 6, name: '3D打印', img: d3, wz: -23 }
   ])
+  const handleClick = (cat) => {
+    console.log(cat);
+  }
   return (
-    <div className={styles.category}>
+    <div className={styles.categorys}>
       <div className={styles.title}>类别</div>
       <div className={styles.content}>
         {
           category.map((cat) => (
-            <div key={cat.id} className={styles.category}>
+            <div key={cat.id} className={styles.category} onClick={() => handleClick(cat)}>
               <div className={styles.name}>{cat.name}</div>
               <div className={styles.imgbox}>
                 <img src={cat.img} alt="categoryIcon" style={{ marginTop: cat.wz }} />
