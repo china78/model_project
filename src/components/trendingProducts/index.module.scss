@@ -1,3 +1,7 @@
 .trendingProducts {
   width: 100%;
 }
+.productBox {
+  @include flex-between;
+  flex-wrap: wrap;
+}

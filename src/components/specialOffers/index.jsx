@@ -11,7 +11,7 @@ export default function SpecialOffers () {
       name: '3D打印雕像', 
       descript: '由3D Printing',
       img: zw,
-      sellIocn: '30%',
+      sellIcon: '30%',
       backgroundColor: '#e6e7eb'
     },
     { 
@@ -19,7 +19,7 @@ export default function SpecialOffers () {
       name: '新品上市', 
       descript: '了解我们最新的 3D',
       img: zw,
-      sellIocn: '20%',
+      sellIcon: '20%',
       backgroundColor: '#f8f8f8'
     }
   ])

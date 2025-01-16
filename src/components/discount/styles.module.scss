@@ -29,16 +29,19 @@
       }
     }
     .icon {
+      @include flex-center;
       width: 80px;
       height: 80px;
       background-color: #ed2124;
       border-radius: 50%;
       text-align: center;
       color: #fff;
-      font-size: 18px;
+      font-size: 20px;
       position: absolute;
-      top: 0;
-      right: 0;
+      top: -26px;
+      right: 41px;
+      word-wrap: revert;
+      font-weight: 500;
     }
   }
 }

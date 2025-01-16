@@ -13,7 +13,7 @@ export default function Discount({
         <div className={styles.imgbox}>
           <img src={productInfo.img} alt="" />
         </div>
-        { productInfo.sellIcon && <div className={styles.icon}>{productInfo.sellIcon}<br/>折扣</div> }
+        { productInfo.sellIcon && <div className={styles.icon}>{productInfo.sellIcon}折扣</div> }
       </div>
       <RedButton
         text="立即购买"
