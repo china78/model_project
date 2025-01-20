@@ -64,6 +64,7 @@ export default function TrendingProducts () {
       oldPrice: 11.99
     }
   ])
+  
   return (
     <div className={styles.trendingProducts}>
       <CusTitle
