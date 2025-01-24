@@ -6,7 +6,7 @@ export default function BrowseByCategory () {
     <div className={styles.browseByCategory}>
       <CusTitle
         leftIcon={titleIcon}
-        text="按类别浏览"
+        text="按小类别浏览"
       />
     </div>
   )

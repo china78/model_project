@@ -4,6 +4,7 @@ import CusTitle from '../title';
 import Discount from '../discount';
 import { useState } from 'react';
 import zw from '@/assets/img/zw.png';
+import TimeLimit from '../timeLimit';
 export default function SpecialOffers () {
   const [discounts, setDiscounts] = useState([
     { 
@@ -35,6 +36,7 @@ export default function SpecialOffers () {
           <Discount key={item.id} productInfo={item} />
         ))
       }
+      <TimeLimit endTime="2025-01-23T23:42:18"  />
     </div>
   )
 }

@@ -2,6 +2,7 @@ import styles from './styles.module.scss';
 import star from '@/assets/icons/star.png';
 import nostar from '@/assets/icons/nostar.png'
 import { useEffect, useState } from 'react';
+import axios from 'axios'
 
 export default function Product({ data }) {
   const [isHover, setIsHover] = useState(false);
@@ -13,7 +14,18 @@ export default function Product({ data }) {
   }
   const handleStarClick = function() {
     // 这里要调接口的
-    
+    axios.get('/user?ID=12345')
+    .then(function (response) {
+      // 处理成功情况
+      console.log(response);
+    })
+    .catch(function (error) {
+      // 处理错误情况
+      console.log(error);
+    })
+    .finally(function () {
+      // 总是会执行
+    });
   }
   return (
     <div className={styles.product} onMouseEnter={onMouseEnt} onMouseLeave={onMouseOut}>
