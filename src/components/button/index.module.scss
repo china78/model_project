@@ -2,10 +2,10 @@
   color: #fff;
   border: none;
   border-radius: 10px;
-  font-size: 24px;
+  font-size: 20px;
   margin-left: 14px;
   cursor: pointer;
-  background-color: #ed2124;
+  background-color: $red-color;
 }
 .redButton:active {
   background-color: #e10c0f;

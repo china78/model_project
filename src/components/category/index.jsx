@@ -21,7 +21,7 @@ export default function Category () {
   }
   return (
     <div className={styles.categorys}>
-      <div className={styles.title}>类别</div>
+      {/* <div className={styles.title}>类别</div> */}
       <div className={styles.content}>
         {
           category.map((cat) => (

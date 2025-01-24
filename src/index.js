@@ -5,6 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router';
 import Home from '@/pages/home';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
  
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

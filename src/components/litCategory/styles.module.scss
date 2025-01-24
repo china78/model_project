@@ -1,0 +1,21 @@
+.litCategory {
+  height: 285px;
+  width: 406px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: aliceblue;
+  margin-right: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  @include flex-column-center;
+  .title {
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .des {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}

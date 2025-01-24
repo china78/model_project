@@ -14,7 +14,7 @@
   .descript {
     font-size: 18px;
     color: #464749;
-    margin-bottom: 44px;
+    margin-bottom: 35px;
   }
   .iconbox {
     position: relative;
@@ -23,7 +23,7 @@
       overflow: hidden;
       border-radius: 10px;
       margin: 0 auto;
-      margin-bottom: 44px;
+      margin-bottom: 10px;
       img {
         width: 100%;
       }
@@ -32,7 +32,7 @@
       @include flex-center;
       width: 80px;
       height: 80px;
-      background-color: #ed2124;
+      background-color: $red-color;
       border-radius: 50%;
       text-align: center;
       color: #fff;

@@ -36,7 +36,7 @@ export default function SpecialOffers () {
           <Discount key={item.id} productInfo={item} />
         ))
       }
-      <TimeLimit endTime="2025-01-23T23:42:18"  />
+      <TimeLimit endTime="2025-01-24T15:42:18"  />
     </div>
   )
 }

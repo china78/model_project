@@ -11,21 +11,27 @@ export default function TimeLimit({ endTime }) {
   */
   return (
     <div className={styles.timelimit}>
-      <div className={styles.title}></div>
-      <div className={styles.des}></div>
+      <div className={styles.title}>限时福利！</div>
+      <div className={styles.des}>限时优惠～</div>
       {/* 倒计时 */}
       <div className={styles.countdown}>
         {/* 小时 */}
-        <div>{Math.floor(hours / 10)}</div>
-        <div>{hours % 10}</div>
-        <div>:</div>
+        <div className={styles.timeblock}>
+          <div className={styles.blocktime}>{Math.floor(hours / 10)}</div>
+          <div className={styles.blocktime2}>{hours % 10}</div>
+        </div>
+        <div className={styles.mh}>:</div>
         {/* 分 */}
-        <div>{Math.floor(minutes / 10)}</div>
-        <div>{minutes % 10}</div>
-        <div>:</div>
+        <div className={styles.timeblock}>
+          <div className={styles.blocktime}>{Math.floor(minutes / 10)}</div>
+          <div className={styles.blocktime2}>{minutes % 10}</div>
+        </div>
+        <div className={styles.mh}>:</div>
         {/* 秒 */}
-        <div>{Math.floor(seconds / 10)}</div>
-        <div>{seconds % 10}</div>
+        <div className={styles.timeblock}>
+          <div className={styles.blocktime}>{Math.floor(seconds / 10)}</div>
+          <div className={styles.blocktime2}>{seconds % 10}</div>
+        </div>
       </div>
     </div>
   )
