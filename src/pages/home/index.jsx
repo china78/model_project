@@ -5,26 +5,32 @@ import Category from '@/components/category';
 import SpecialOffers from '@/components/specialOffers';
 import TrendingProducts from '@/components/trendingProducts';
 import BrowseByCategory from '@/components/browseByCategory';
+import News from '@/components/news';
+import PageFooter from '@/components/pageFooter';
 
 export default function Home() {
   return (
     <div className={styles.home}>
-      <Header />
-      <Banner />
-      {/* 分类 */}
-      <Category />
-      <div className="flex">
-        {/* 特别优惠 */}
-        <SpecialOffers />
-        <div className='contentRightBox'>
-          {/* 热门产品 */}
-          <TrendingProducts />
-          {/* 按类别浏览 */}
-          <BrowseByCategory />
+      <div className={styles.content}>
+        <Header />
+        <Banner />
+        {/* 分类 */}
+        <Category />
+        <div className={styles.mainContent}>
+          {/* 特别优惠 */}
+          <SpecialOffers />
+          <div className={styles.contentRightBox}>
+            {/* 热门产品 */}
+            <TrendingProducts />
+            {/* 按类别浏览 */}
+            <BrowseByCategory />
+          </div>
         </div>
       </div>
       {/* 消息 */}
-      {/* <News /> */}
+      <News />
+      {/* footer */}
+      <PageFooter />
     </div>
   )
 }

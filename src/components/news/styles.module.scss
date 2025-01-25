@@ -1,0 +1,33 @@
+.news {
+  background-color: #f8f8f8;
+  padding-left: 98px;
+  padding-right: 98px;
+  overflow: auto;
+  position: relative;
+  .title {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    @include flex-center-end;
+    .text {
+      font-size: 30px;
+      font-weight: 500;
+    }
+    .morebox {
+      @include flex-start;
+      color: #6c6c6c;
+      cursor: pointer;
+      position: relative;
+      bottom: 5px;
+      left: 25px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .newsBox {
+    @include flex-between;
+    margin-bottom: 100px;
+  }
+}

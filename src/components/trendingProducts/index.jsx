@@ -76,6 +76,7 @@ export default function TrendingProducts () {
         {
           products.map((item) => (
             <Product
+              key={item.id}
               data={item}
             />
           ))

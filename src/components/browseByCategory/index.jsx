@@ -69,7 +69,7 @@ export default function BrowseByCategory () {
       >
         {
           litcatgorys?.map((item) => (
-            <SwiperSlide>
+            <SwiperSlide key={item.id}>
               <LitCategory key={item.id} data={item}/>
             </SwiperSlide>
           

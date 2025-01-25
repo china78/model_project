@@ -1,0 +1,22 @@
+.pageFooter {
+  padding: 30px 98px;
+
+  @include flex-between;
+  .leftBox {
+    @include flex-start;
+    .mainText {
+      margin-right: 30px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .pages {
+      @include flex-start;
+      .textItem {
+        margin-right: 30px;
+      }
+    }
+  }
+  .rightBox {
+
+  }
+}
