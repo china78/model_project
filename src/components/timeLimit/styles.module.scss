@@ -1,5 +1,5 @@
 @mixin blockFont {
-  width: 32px;
+  width: 45%;
   height: 50px;
   border-radius: 10px;
   color: #fff;
@@ -33,6 +33,7 @@
     margin-bottom: 30px;
     @include flex-center;
     .timeblock {
+      width: 26%;
       @include flex-start;
       .blocktime {
         @include blockFont;

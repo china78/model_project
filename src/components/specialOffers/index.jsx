@@ -1,10 +1,10 @@
 import styles from './index.module.scss';
 import titleIcon from '@/assets/icons/lit.png';
-import CusTitle from '../title';
-import Discount from '../discount';
+import CusTitle from '../Title';
+import Discount from '../Discount';
 import { useState } from 'react';
 import zw from '@/assets/img/zw.png';
-import TimeLimit from '../timeLimit';
+import TimeLimit from '../TimeLimit';
 export default function SpecialOffers () {
   const [discounts, setDiscounts] = useState([
     { 

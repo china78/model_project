@@ -1,11 +1,11 @@
 import styles from './index.module.scss';
-import CusTitle from '../title';
+import CusTitle from '../Title';
 import titleIcon from '@/assets/icons/lit.png';
 import jl from '@/assets/icons/jl.png';
 import jr from '@/assets/icons/jr.png';
 import { useState } from 'react';
 import zw from '@/assets/img/zw.png';
-import Product from '@/components/product';
+import Product from '@/components/Product';
 export default function TrendingProducts () {
   const imgsize = { width: 18 };
   const ricon = (

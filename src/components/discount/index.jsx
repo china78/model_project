@@ -1,5 +1,5 @@
 import styles from './styles.module.scss';
-import { RedButton } from '../button/index.jsx';
+import { RedButton } from '../Button/index.jsx';
 
 export default function Discount({
   productInfo,
@@ -17,7 +17,7 @@ export default function Discount({
       </div>
       <RedButton
         text="立即购买"
-        width="250px"
+        width="80%"
         height='48px'
         handleClick={handleClick} />
     </div>

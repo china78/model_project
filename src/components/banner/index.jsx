@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './index.module.scss';
 import mainImg from '@/assets/img/main.jpeg';
-import SearchInput from '@/components/searchInput';
+import SearchInput from '@/components/SearchInput';
 export default function Banner () {
   return (
     <div className={styles.banner}>

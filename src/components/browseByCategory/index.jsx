@@ -1,9 +1,9 @@
 import styles from './index.module.scss';
 import titleIcon from '@/assets/icons/lit.png';
-import CusTitle from '../title';
+import CusTitle from '../Title';
 import { useState } from 'react';
 import zw from '@/assets/img/zw.png';
-import LitCategory from '../litCategory'
+import LitCategory from '../LitCategory'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 
@@ -63,7 +63,7 @@ export default function BrowseByCategory () {
         navigation={true}
         modules={[Navigation, Autoplay]}
         spaceBetween={50}
-        slidesPerView={2}
+        slidesPerView={3}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >

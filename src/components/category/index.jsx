@@ -6,7 +6,7 @@ import tu from '@/assets/img/tu.jpeg'
 import jin from '@/assets/img/js.jpeg'
 import shui from '@/assets/img/sj.jpeg'
 import d3 from '@/assets/img/d3.jpeg'
-import PictrueFrame from '@/components/pictrueFrame'
+import PictrueFrame from '@/components/PictrueFrame'
 export default function Category () {
   const [category, setCategory] = useState([
     { id: 1, name: '木雕', img: mu, wz: 0 },

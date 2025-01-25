@@ -1,16 +1,14 @@
 .home {
-  .content {
-    // padding-left: 98px;
-    // padding-right: 98px;
-    // padding-top: 20px;
-    .mainContent {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 0 40px 100px;
-      .contentRightBox {
-        width: 890px;
-      }
+  width: 100%;
+  .mainContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 40px 100px;
+    .contentRightBox {
+      // width: 890px;
+      width: 78%;
+      // margin-left: 20px;
     }
   }
 }

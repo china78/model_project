@@ -2,7 +2,7 @@ import styles from './styles.module.scss';
 import { useState } from 'react';
 import moreIcon from '@/assets/icons/more.png';
 import zw from '@/assets/img/zw.png';
-import NewsItem from '../newsItem';
+import NewsItem from '../NewsItem';
 
 export default function News () {
   const [news, setNews] = useState([

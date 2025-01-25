@@ -23,11 +23,13 @@ export default function Header () {
         <div className={styles.logo}>
           <img src={logo} alt="logo" />
         </div>
-        {
-          navItems?.map((nav) => (
-            <div className={styles.navName} key={nav.id}>{nav.navName}</div>
-          ))
-        }
+        <div className={styles.navBox}>
+          {
+            navItems?.map((nav) => (
+              <div className={styles.navName} key={nav.id}>{nav.navName}</div>
+            ))
+          }
+        </div>
       </div>
       <div className={styles.rightbox}>
         <div className={styles.icons}>

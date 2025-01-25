@@ -1,10 +1,12 @@
 .banner {
+  width: 100%;
   padding: 230px 40px 220px; // 230加了header的高度
-  @include flex-start;
+  box-sizing: border-box;
+  @include flex-between;
   .content {
-    margin-right: 180px;
+    flex: 2 1 0; // flex-grow: 2, flex-shrink: 1, flex-basis: 0
     .title {
-      width: 804px;
+      // width: 804px;
       font-size: 46px;
       font-family: Impact;
       margin-bottom: 28px;
@@ -15,7 +17,8 @@
     }
   }
   .mainImg {
-    max-width: 230px;
+    max-width: 260px;
+    flex: 1 1 0;  // flex-grow: 1, flex-shrink: 1, flex-basis: 0
     img {
       width: 100%;
       transform: scaleX(-1);

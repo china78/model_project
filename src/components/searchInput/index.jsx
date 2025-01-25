@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from './index.module.scss';
 import CusInput from './comps/input.jsx';
 import searchIcon from '@/assets/icons/search.png';
-import { RedButton } from '../button/index.jsx';
+import { RedButton } from '../Button/index.jsx';
 export default function SearchInput () {
   const [inputValue, setInputValue] = useState('');
   const handleSearch = () => {
