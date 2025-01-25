@@ -1,3 +1,52 @@
+html {
+  font-size: 16px;
+}
 body {
   margin: 0;
 }
+
+/* 
+  手机 小屏设备
+  最大宽度： max-width: 600px 或 max-width: 480px
+  iPhone SE / 5 / 6 / 7 / 8
+  大多数安卓手机
+ */
+@media (max-width: 600px) {
+  /* 适配手机屏幕 */
+}
+
+/* 
+  平板（中等屏幕设备）
+  最小宽度： min-width: 601px
+  最大宽度： max-width: 1024px
+  常见设备：
+  iPad（横竖屏）
+  大部分安卓平板
+  小米平板、三星平板等
+ */
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* 适配平板屏幕 */
+}
+
+/*
+  桌面（大屏设备）
+  最小宽度： min-width: 1025px
+  常见设备：
+  一般桌面显示器（大部分为 1080p 或更大分辨率）
+  MacBook Pro 13/15 英寸
+*/
+@media (min-width: 1025px) {
+  /* 适配桌面设备 */
+}
+
+/*
+  超大屏幕（大显示器）
+  最小宽度： min-width: 1440px 或更大
+  常见设备：
+  4K 显示器
+  超宽显示器（例如 2560px 以上宽度的显示器）
+*/
+@media (min-width: 1440px) {
+  /* 适配超大屏幕 */
+}
+

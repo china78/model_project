@@ -1,5 +1,4 @@
 import styles from './styles.module.scss';
-import Header from '@/components/header';
 import Banner from '@/components/banner';
 import Category from '@/components/category';
 import SpecialOffers from '@/components/specialOffers';
@@ -12,7 +11,6 @@ export default function Home() {
   return (
     <div className={styles.home}>
       <div className={styles.content}>
-        <Header />
         <Banner />
         {/* 分类 */}
         <Category />

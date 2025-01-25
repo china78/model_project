@@ -1,11 +1,10 @@
 .banner {
-  padding-top: 150px;
-  padding-bottom: 220px;
+  padding: 230px 40px 220px; // 230加了header的高度
   @include flex-start;
   .content {
     margin-right: 180px;
     .title {
-      width: 725px;
+      width: 804px;
       font-size: 46px;
       font-family: Impact;
       margin-bottom: 28px;
@@ -16,7 +15,7 @@
     }
   }
   .mainImg {
-    max-width: 212px;
+    max-width: 230px;
     img {
       width: 100%;
       transform: scaleX(-1);
