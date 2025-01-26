@@ -4,6 +4,13 @@ import { useState } from 'react';
 import ColumnNav from '@/components/ColumnNav';
 import litIcon from '@/assets/icons/lit.png'
 import categoryHeader from '@/assets/icons/category.png';
+import all from '@/assets/icons/categorys/all.png';
+import wood from '@/assets/icons/categorys/wood.png';
+import fire from '@/assets/icons/categorys/fire.png';
+import earth from '@/assets/icons/categorys/earth.png';
+import gold from '@/assets/icons/categorys/gold.png';
+import water from '@/assets/icons/categorys/water.png';
+import d3 from '@/assets/icons/categorys/3d.png';
 
 export default function Goods() {
   // Wood Fire Earth Gold Water
@@ -11,15 +18,20 @@ export default function Goods() {
     {
       id: 'all',
       name: '所有',
-      icon: litIcon,
+      icon: all,
       type: 'all'
     },
     {
       id: 'wood',
       name: '木雕',
-      icon: litIcon,
+      icon: wood,
       type: 'wood',
       childrens: [
+        {
+          id: 'wood-all',
+          name: '所有',
+          type: 'wood-all'
+        },
         {
           id: 'wood-bj',
           name: '木雕摆件',
@@ -35,9 +47,14 @@ export default function Goods() {
     {
       id: 'fire',
       name: '火器',
-      icon: litIcon,
+      icon: fire,
       type: 'fire',
       childrens: [
+        {
+          id: 'fire-all',
+          name: '所有',
+          type: 'fire-all'
+        },
         {
           id: 'fire-lz',
           name: '蜡烛',
@@ -48,9 +65,14 @@ export default function Goods() {
     {
       id: 'earth',
       name: '土制',
-      icon: litIcon,
+      icon: earth,
       type: 'earth',
       childrens: [
+        {
+          id: 'earth-all',
+          name: '所有',
+          type: 'earth-all'
+        },
         {
           id: 'earth-ch',
           name: '茶壶',
@@ -61,9 +83,14 @@ export default function Goods() {
     {
       id: 'gold',
       name: '金艺',
-      icon: litIcon,
+      icon: gold,
       type: 'gold',
       childrens: [
+        {
+          id: 'gold-all',
+          name: '所有',
+          type: 'gold-all'
+        },
         {
           id: 'gold-jz',
           name: '戒指',
@@ -74,9 +101,14 @@ export default function Goods() {
     {
       id: 'water',
       name: '水晶',
-      icon: litIcon,
+      icon: water,
       type: 'water',
       childrens: [
+        {
+          id: 'water-all',
+          name: '所有',
+          type: 'water-all'
+        },
         {
           id: 'water-sl',
           name: '手链',
@@ -87,9 +119,14 @@ export default function Goods() {
     {
       id: '3d',
       name: '3D打印',
-      icon: litIcon,
+      icon: d3,
       type: '3d',
       childrens: [
+        {
+          id: 'd3-all',
+          name: '所有',
+          type: 'd3-all'
+        },
         {
           id: '3d-sb',
           name: '手办',

@@ -1,22 +1,36 @@
 .columnNav {
   width: 100%;
   background-color: #fff;
+  // height: calc(100vh - 53px);
+  height: 100vh;
   .navItem {
     .navParent {
-      @include flex-start;
+      @include flex-between;
       // transition: transform 0.3s ease;
       padding: 10px 20px 10px 40px;
       cursor: pointer;
       height: 35px;
-      .parentIconBox {
-        width: 15px;
-        margin-right: 5px;
-        img {
-          width: 100%;
+      font-weight: 400;
+      .leftbox {
+        @include flex-start;
+        .parentIconBox {
+          width: 18px;
+          margin-right: 10px;
+          opacity: 0.3;
+          img {
+            width: 100%;
+          }
+        }
+        .parentName {
+
         }
       }
-      .parentName {
-
+      .jt {
+        width: 10px;
+      }
+      .jtright {
+        transform: rotate(-90deg);
+        transition: transform 0.3s ease;
       }
     }
     .navParent:hover {
@@ -24,9 +38,9 @@
     }
     .childrenItem {
       cursor: pointer;
-      padding: 10px 0px 10px 80px;
+      padding: 10px 0px 10px 70px;
       background-color: #fff;
-      // transition: transform 0.3s ease;
+      color: #727272;
     }
     .childrenItem:hover {
       background-color: #f8f8f8;
