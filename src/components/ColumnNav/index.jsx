@@ -2,27 +2,33 @@ import styles from './styles.module.scss';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import jt from '@/assets/icons/categorys/jt.png'
+import { useNavStore } from '@/store/navStore.js';
 
 export default function ColumnNav({ data }) {
-  const [currentParentId, setCurrentParentId] = useState('all');
-  const [currentKey, setCurrentKey] = useState('');
   const navigator = useNavigate();
+  const { 
+    currentGoodsId,
+    currentGoodsParentId,
+    setCurrentGoodsId,
+    setCurrentGoodsParentId
+  } = useNavStore();
 
   const handleParentClick = function(item) {
     if (item.id === 'all') {
+      setCurrentGoodsId('')
       navigator('/goods/all');
     }
-    if (currentParentId === item.id) {
-      setCurrentParentId('');
+    if (currentGoodsParentId === item.id) {
+      setCurrentGoodsParentId('');
     } else {
-      setCurrentParentId(item.id);
+      setCurrentGoodsParentId(item.id);
     }
   }
 
   const handleChildrenItem = function(children) {
     const categoryKey = children.id;
     
-    setCurrentKey(categoryKey);
+    setCurrentGoodsId(categoryKey);
     navigator(`/goods/${categoryKey}`);
   }
 
@@ -30,7 +36,7 @@ export default function ColumnNav({ data }) {
     <div className={styles.columnNav}>
       {
         data?.map((item) => {
-          const isCurrentParentId = item.id === currentParentId;
+          const isCurrentParentId = item.id === currentGoodsParentId;
           const notall = item.id !== 'all';
           const hasChildren = item?.childrens && item?.childrens?.length > 0;
           return (
@@ -38,7 +44,7 @@ export default function ColumnNav({ data }) {
               className={styles.navItem} 
               key={item.id} 
               style={{ 
-                backgroundColor: item.id === currentParentId ? '#f8f8f8' : '#fff' 
+                backgroundColor: item.id === currentGoodsParentId ? '#f8f8f8' : '#fff' 
               }}
             >
               {/* 父节点 */}
@@ -73,7 +79,7 @@ export default function ColumnNav({ data }) {
               {
                 item?.childrens && (
                   item?.childrens?.map((children) => {
-                    const isCurrentKey = children.id === currentKey;
+                    const isCurrentKey = children.id === currentGoodsId;
                     return (
                       <div
                         style={{

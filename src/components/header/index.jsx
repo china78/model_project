@@ -5,10 +5,18 @@ import search from '@/assets/icons/search.png';
 import shop from '@/assets/icons/shop.png';
 import me from '@/assets/icons/me.png';
 import { useNavigate } from 'react-router';
+import { useNavStore } from '@/store/navStore.js';
 
 export default function Header ({ goPath }) {
 
+  const { currentHeaderNavId, setCurrentHeaderNavId } = useNavStore();
+
   let navigate = useNavigate();
+  const handleClick = function(nav) {
+    // 全局
+    setCurrentHeaderNavId(nav.id);
+    goPath(nav.path);
+  }
 
   const [navItems, setNavItems] = useState([
     { id: 1, navName: '首页', path: '/' },
@@ -28,15 +36,18 @@ export default function Header ({ goPath }) {
         </div>
         <div className={styles.navBox}>
           {
-            navItems?.map((nav) => (
-              <div
-                className={styles.navName}
-                key={nav.id}
-                onClick={() => goPath(nav.path)}
-              >
-                {nav.navName}
-              </div>
-            ))
+            navItems?.map((nav) => {
+              const currentSelf = nav.id === currentHeaderNavId;
+              return (
+                <div
+                  className={`${styles.navName} ${ currentSelf ? styles.navActive : '' }`}
+                  key={nav.id}
+                  onClick={() => handleClick(nav)}
+                >
+                  {nav.navName}
+                </div>
+              )
+            })
           }
         </div>
       </div>
