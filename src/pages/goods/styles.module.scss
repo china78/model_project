@@ -1,0 +1,20 @@
+.goods {
+  padding-top: 52px;
+  background-color: #f7f7f7;
+  .columnNavBox {
+    width: 300px;
+    background-color: #fff;
+    .cateHeader {
+      @include flex-start;
+      padding: 32px 20px 8px 40px;
+      font-size: 24px;
+      .iconbox {
+        width: 40px;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}

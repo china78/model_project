@@ -27,16 +27,16 @@ export default function SpecialOffers () {
   
   return (
     <div className={styles.specialOffers}>
-      <CusTitle
+      {/* <CusTitle
         leftIcon={titleIcon}
         text="特别优惠"
-      />
+      /> */}
+      <TimeLimit endTime="2025-01-24T15:42:18"  />
       {
         discounts.map((item) => (
           <Discount key={item.id} productInfo={item} />
         ))
       }
-      <TimeLimit endTime="2025-01-24T15:42:18"  />
     </div>
   )
 }

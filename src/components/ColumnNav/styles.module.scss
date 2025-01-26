@@ -1,0 +1,35 @@
+.columnNav {
+  width: 100%;
+  background-color: #fff;
+  .navItem {
+    .navParent {
+      @include flex-start;
+      // transition: transform 0.3s ease;
+      padding: 10px 20px 10px 40px;
+      cursor: pointer;
+      height: 35px;
+      .parentIconBox {
+        width: 15px;
+        margin-right: 5px;
+        img {
+          width: 100%;
+        }
+      }
+      .parentName {
+
+      }
+    }
+    .navParent:hover {
+      background-color: #f8f8f8;
+    }
+    .childrenItem {
+      cursor: pointer;
+      padding: 10px 0px 10px 80px;
+      background-color: #fff;
+      // transition: transform 0.3s ease;
+    }
+    .childrenItem:hover {
+      background-color: #f8f8f8;
+    }
+  }
+}

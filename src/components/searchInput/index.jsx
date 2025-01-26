@@ -16,7 +16,7 @@ export default function SearchInput () {
         setInputValue={setInputValue}
         placeholder="what are you looking for?"
       />
-      <RedButton handleClick={handleSearch} />
+      <RedButton height='54px' handleClick={handleSearch} />
     </div>
   )
 }

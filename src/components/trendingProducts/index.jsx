@@ -67,11 +67,11 @@ export default function TrendingProducts () {
   
   return (
     <div className={styles.trendingProducts}>
-      <CusTitle
+      {/* <CusTitle
         leftIcon={titleIcon}
         text="热门产品"
         rightIcon={ricon}
-      />
+      /> */}
       <div className={styles.productBox}>
         {
           products.map((item) => (

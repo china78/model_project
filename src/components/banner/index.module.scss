@@ -1,6 +1,6 @@
 .banner {
   width: 100%;
-  padding: 230px 40px 220px; // 230加了header的高度
+  padding: 100px 40px 100px; // 230加了header的高度
   box-sizing: border-box;
   @include flex-between;
   .content {
